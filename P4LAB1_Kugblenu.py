@@ -1,25 +1,17 @@
-#Sejiro Kugblenu
-#10/31/24
-#P4LAB2
-#Times Tables
+#Sejiro K.
+#11/6/24
+#P4LAB1
+#House Generator
 
-running = "yes"
+import turtle
 
-while running == "yes":
+i = 0
 
-    num = int(input("\nEnter and integer: "))
-    print()
+for i in range(0, 4):
+    turtle.forward(90)
+    turtle.right(90)
 
-    if num >= 0 :
-        
-        for i in range(1, 13):
-            print(f"{num} * {i} = {num * i}")
-            i += 1
-
-    else:
-        
-        print("This program only accepts positive integers")
-
-    running = input("\nDo you want to run this program again? (yes/no): ")
-
-print("\nThis program is over")
+turtle.left(45)
+turtle.forward(63.64)
+turtle.right(90)
+turtle.forward(63.64)
